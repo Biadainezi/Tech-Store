@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-
+<script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Loja Laravel</title>
+    <title>Loja</title>
 
     <!-- Custom fonts for this template-->
     <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,8 +19,6 @@
 
     <!-- Custom styles for this template-->
     <link href="/css/sb-admin-2.min.css" rel="stylesheet">
-    <script src="https://cdn.tiny.cloud/1/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-
 
 </head>
 
@@ -37,90 +35,60 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Loja Laravel</div>
+                <div class="sidebar-brand-text mx-3">Tech Store</div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
-
+            
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="/clientes">
+                <a class="nav-link" href="/vendas">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Clientes</span></a>
+                    <span>Loja</span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="vendas/exibir-carrinho">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Carrinho</span></a>
+            </li>            
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Produtos
+                Administrativo
             </div>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-        
+            <!-- Nav Item - Pages Collapse Menu -->           
+
             <li class="nav-item">
                 <a class="nav-link" href="/produto">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Produtos</span></a>
             </li>
-
             <li class="nav-item">
                 <a class="nav-link" href="/marca">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Marcas</span></a>
             </li>
-
             <li class="nav-item">
                 <a class="nav-link" href="/categoria">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Categorias</span></a>
-            </li>            
-
-    
-
+            </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="/cor">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Usuários</span></a>
-            </li>            
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
-                    aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
-                </a>
-                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item active" href="blank.html">Blank Page</a>
-                    </div>
-                </div>
+                    <span>Cores</span></a>
             </li>
-
-            <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li>
+                <a class="nav-link" href="/compras">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Compras</span></a>
+            </li>                    
+           
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -135,6 +103,7 @@
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
+
             <!-- Main Content -->
             <div id="content">
 
@@ -208,7 +177,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <div class="small text-gray-500">November 30, 2023</div>
                                         <span class="font-weight-bold">A new monthly report is ready to download!</span>
                                     </div>
                                 </a>
@@ -219,7 +188,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        <div class="small text-gray-500">November 30, 2023</div>
                                         $290.29 has been deposited into your account!
                                     </div>
                                 </a>
@@ -230,7 +199,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        <div class="small text-gray-500">November 30, 2023</div>
                                         Spending Alert: We've noticed unusually high spending for your account.
                                     </div>
                                 </a>
@@ -310,7 +279,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Matheus Baptista</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Ana Beatriz Dainezi</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
@@ -344,7 +313,11 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+                    
+                    <!-- Page Heading -->
+                    
                     @yield('contents')
+
                 </div>
                 <!-- /.container-fluid -->
 
@@ -401,12 +374,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="/js/sb-admin-2.min.js"></script>
-
-    <!-- Inclusão de editar HTML na descrição-->
-    <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
-    @yield('scripts')
-
-
+    
 </body>
 
 </html>

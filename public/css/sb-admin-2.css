@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --blue: #020716;
+  --blue: #4e73df;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -159,7 +159,7 @@ sup {
 }
 
 a {
-  color: #df6823;
+  color: #4e73df;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2431,7 +2431,7 @@ fieldset:disabled a.btn {
 
 .btn-success {
   color: #fff;
-  background-color: #1cc88a;
+  background-color: #861cc8;
   border-color: #1cc88a;
 }
 
@@ -2463,7 +2463,7 @@ fieldset:disabled a.btn {
 
 .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus,
 .show > .btn-success.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(62, 208, 156, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(118, 62, 208, 0.5);
 }
 
 .btn-info {
@@ -6491,7 +6491,7 @@ button.bg-dark:focus {
 }
 
 .bg-white {
-  background-color: #fff !important;
+  background-image:linear-gradient(180deg,#f1af09 10%,#ff0000 100%);
 }
 
 .bg-transparent {
@@ -9901,7 +9901,7 @@ a:focus {
 
 .bg-gradient-primary {
   background-color: #4e73df;
-  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-image: linear-gradient(180deg, #cf09f1 10%, #007fff 100%);
   background-size: cover;
 }
 
